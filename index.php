@@ -114,6 +114,7 @@ if(youtubeExiste($user)){
     print '</span>';
 }
 */
+/*
 print '<br>';
 if(inExiste($user)){
     print '<span class="vermelho">';
@@ -124,6 +125,7 @@ if(inExiste($user)){
     print 'não existe '.$user.'.in ($2.99/$4.79)';
     print '</span>';
 }
+*/
 
 print '<br>';
 if(comExiste($user)){
