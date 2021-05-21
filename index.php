@@ -102,7 +102,7 @@ if(packagistExiste($user)){
     print '</span>';
 }
 
-/*
+
 print '<br>';
 if(youtubeExiste($user)){
     print '<span class="vermelho">';
@@ -113,7 +113,7 @@ if(youtubeExiste($user)){
     print 'não existe youtube@'.$user;
     print '</span>';
 }
-*/
+
 /*
 print '<br>';
 if(inExiste($user)){
@@ -145,7 +145,7 @@ if(comBrExiste($user)){
     print '</span>';
 }else{
     print '<span class="verde">';
-    print 'não existe '.$user.'.com.br ($14.99 register/$16.34 renew)';
+    print 'não existe '.$user.'.com.br (R$40.00 register)';
     print '</span>';
 }
 
@@ -282,7 +282,7 @@ function twitterExiste($username){
 }
 
 function youtubeExiste($username){
-    $url='https://www.youtube.com/c/'.$username;
+    $url='https://www.youtube.com/user/'.$username;
     $str=urlExisteCurl($url);
     if($str){
         return true;
